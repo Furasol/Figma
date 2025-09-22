@@ -36,7 +36,53 @@ header {
     text-decoration: none;
 }
 
-.list a:hover {
-    text-decoration-line: underline;
-    color: #4F46E5;
+.section_1 {
+    background: #E9D5FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 63px;
+    margin-bottom: 32px;
+}
+
+.form-search {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f6f6f6;
+    transition: box-shadow 0.25s;
+}
+
+.search-bar {
+    font-size: 16px;
+    color: #000000;
+    margin-left: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 445px;
+}
+
+.search-bar::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.search-icon {
+    width: 16px;
+    height: 16px;
+    padding-left: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.heading2 {
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.find-img {
+    width: 300px;
+    height: 300px;
 }
