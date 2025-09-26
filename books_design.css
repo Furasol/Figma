@@ -89,19 +89,97 @@ header {
 
 /* стили для карточки*/
 
+.heading3 {
+    font-size: 24px;
+    font-style: bold;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #1C2024;
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 26px;
+}
+
 .card {
-    width: 232px;
-    height: 390px;
+    width: auto;
+    height: auto;
     border-radius: 12px;
     background-color: #EEF2FF;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+}
+
+.card-top {
+    flex: 0 0 200px;
     position: relative;
 }
 
 .card-img {
     width: 200px;
     height: 200px;
+    border-radius: 12px;
+}
+
+.card-price-box {
+    background: #EEF2FF;
+    position: absolute;
+    width: 68px;
+    height: 28px;
+    bottom: 14px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.card-price {
+    font-size: 16px;
+    font-style: bold;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    padding: 2px 8px;
+    color: #4F46E5;
+}
+
+.card-bottom {
+    flex: 1 0 auto;
+    margin-top: 10px;
+}
+
+.card-title {
+    font-size: 14px;
+    font-style: bold;
+    font-weight: 700px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #1C2024;
+}
+
+.card-rate {
+    display: flex;
+    margin-bottom: 14px;
+}
+
+.card-author {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #818CF8;
+    text-decoration: none;
+    padding-right: 10px;   
 }
 
 .star {
@@ -114,8 +192,54 @@ header {
     height: 14px;
 }
 
+.card-description-container {
+    width: 200px;
+    height: 50px;
+}
+
+.card-description {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #1C2024;
+}
+
+.card-to-cart {
+    width: 200px;
+    height: 32px;
+    border-radius: 4px;
+    background-color: #18181B;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:0.4s ease;
+}
+
 .card-cart {
     width: 19.7px;
     height: 17.5px;
     opacity: 90%;
+    padding-right: 8px;
+}
+
+.card-to-cart:active {
+    transform: scale(1.1);
+}
+
+/*Стили для кнопок прокрутки*/
+
+.scrolls-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 33px;
 }
