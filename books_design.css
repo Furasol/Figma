@@ -1,5 +1,7 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 header {
@@ -12,19 +14,23 @@ header {
 
 .heading1 {
     font-size: 24px;
-    padding-left: 63px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    font-weight: 700;
+    line-height: 36px;
+    vertical-align: middle;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     grid-column: 1;
     justify-self: start;
 }
 
 .list {
-    color: black;
     font-size: 12px;
-    padding-right: 63px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -34,6 +40,7 @@ header {
 
 .list a {
     text-decoration: none;
+    color: black;
 }
 
 .section_1 {
@@ -41,8 +48,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 63px;
-    margin-bottom: 32px;
+    padding: 0 3rem;    
+    margin-bottom: 2rem;
 }
 
 .form-search {
@@ -62,24 +69,19 @@ header {
     outline: none;
     border: none;
     background: transparent;
-    width: 445px;
+    width: 28rem;
 }
 
 .search-bar::placeholder {
     color: rgba(0, 0, 0, 0.5);
 }
 
-.search-icon {
-    width: 16px;
-    height: 16px;
-    padding-left: 8px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
-
 .heading2 {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    vertical-align: middle;
 }
 
 .find-img {
@@ -98,14 +100,14 @@ header {
     vertical-align: middle;
     color: #1C2024;
     text-align: center;
-    padding-bottom: 32px;
+    padding-bottom: 2rem;
 }
 
 .cards {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-bottom: 26px;
+    padding-bottom: 2rem;
 }
 
 .card {
@@ -116,7 +118,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 16px;
+    padding: 1rem;
 }
 
 .card-top {
@@ -133,9 +135,9 @@ header {
 .card-price-box {
     background: #EEF2FF;
     position: absolute;
-    width: 68px;
-    height: 28px;
-    bottom: 14px;
+    width: 4rem;
+    height: 1.7rem;
+    bottom: 1.5rem;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
 }
@@ -152,8 +154,11 @@ header {
 }
 
 .card-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     flex: 1 0 auto;
-    margin-top: 10px;
+    margin-top: 0.5rem;
 }
 
 .card-title {
@@ -168,7 +173,7 @@ header {
 
 .card-rate {
     display: flex;
-    margin-bottom: 14px;
+    margin-bottom: 0.5rem;
 }
 
 .card-author {
@@ -179,22 +184,22 @@ header {
     vertical-align: middle;
     color: #818CF8;
     text-decoration: none;
-    padding-right: 10px;   
+    padding-right: 0.5rem;   
 }
 
 .star {
-    width: 15.75px;
-    height: 14px;
+    width: 1em;
+    height: 1em;
 }
 
 .no-star {
-    width: 15.75px;
-    height: 14px;
+    width: 1em;
+    height: 1em;
 }
 
 .card-description-container {
     width: 200px;
-    height: 50px;
+    padding-bottom: 1rem;
 }
 
 .card-description {
@@ -208,7 +213,7 @@ header {
 
 .card-to-cart {
     width: 200px;
-    height: 32px;
+    height: 2rem;
     border-radius: 4px;
     background-color: #18181B;
     font-size: 14px;
@@ -224,10 +229,10 @@ header {
 }
 
 .card-cart {
-    width: 19.7px;
-    height: 17.5px;
+    width: 2rem;
+    height: 2rem;
     opacity: 90%;
-    padding-right: 8px;
+    padding-right: 0.5rem;
 }
 
 .card-to-cart:active {
@@ -241,5 +246,75 @@ header {
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-    padding-bottom: 33px;
+    padding-bottom: 3rem;
+}
+
+/*Стили для подвала сайта*/
+
+.footer {
+    background-color: black;
+    padding: 1.5rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    background-color: black;
+    margin: 0 5rem;
+}
+
+ul {
+    list-style: none;
+    padding-top: 1rem;
+}
+
+li {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+    vertical-align: middle;
+    color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 27%; 
+    padding: 0 2rem;
+}
+
+.header4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    vertical-align: middle;
+    color: #FFFFFF;
+}
+
+.payment {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.visa {
+    width: 4rem;
+    height: 1.5rem;
+}
+
+.MasterCard {
+    width: 2.5rem;
+    height: 1.5rem;
+}
+
+.AmericanExpress {
+    width: 1.5rem;
+    height: 1.5rem;
 }
