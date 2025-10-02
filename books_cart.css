@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #FAFAFA;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 60px;
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+.heading1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    vertical-align: middle;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    grid-column: 1;
+    justify-self: start;
+}
+
+.list {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    grid-column: 2;
+    justify-self: end;
+}
+
+.list a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper {
+    width: auto;
+    max-width: 1200;
+    height: auto;
+    background-color: #FAFAFA;
+    margin: 0 2.5rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-cart {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    padding: 1rem 1rem;
+}
+
+.flex-item {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #71717A;
+    padding: 1rem 1rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "first  third"
+        "second  third"
+    ;
+}
+
+.first {
+    grid-area: first;
+}
+
+.second {
+    grid-area: second;
+}
+
+.third {
+    grid-area: third;
+}
+
+/* стили для карточки*/
+
+.grid-card {
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-card-left-side {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.grid-card-img-item {
+    padding: 1rem 1rem;
+}
+
+.grid-card-left-sidess {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-card-right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2rem 2rem;
+}
+
+.grid-card-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.grid-card-author {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.5px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #71717A;
+}
+
+.grid-star {
+    width: 1em;
+    height: 1em;
+}
+
+.no-grid-star {
+    width: 1em;
+    height: 1em;
+}
+
+.grid-card-price {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+/*стили для заказа*/
+
+.grid-order-container {
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.order {
+    padding: 1rem 1rem;
+}
+
+.sub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.shi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+}
+
+.separator {
+    width: 100%;
+    border: 1px solid;
+    border-color: #1C2024;
+}
+
+.tot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.btn {
+    width: 100%;
+    height: 2rem;
+    background-color: #18181B;
+    border-radius: 8px; 
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.grid-heading1 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    padding-top: 1rem;
+}
+
+.order-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #3F3F46;
+}
+
+.order-price {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.order-text-spend {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #71717A;
+    padding-bottom: 1rem;
+}
+
+.free-shipping {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #71717A;
+}
+
+.total {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.total-price {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+/*Стили для подвала сайта*/
+
+.footer {
+    background-color: black;
+    padding: 1.5rem 0;
+    margin-top: 7rem;
+}
+
+.container {
+    max-width: 1200px;
+    background-color: black;
+    margin: 0 5rem;
+}
+
+ul {
+    list-style: none;
+    padding-top: 1rem;
+}
+
+li {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+    vertical-align: middle;
+    color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 27%; 
+    padding: 0 2rem;
+}
+
+.header4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    vertical-align: middle;
+    color: #FFFFFF;
+}
+
+.payment {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.visa {
+    width: 4rem;
+    height: 1.5rem;
+}
+
+.MasterCard {
+    width: 2.5rem;
+    height: 1.5rem;
+}
+
+.AmericanExpress {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+
