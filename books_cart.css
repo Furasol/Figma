@@ -1,12 +1,53 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+:root {
+    /* Цвета */
+    --color-primary: #E9D5FF;         
+    --color-secondary: #EEF2FF;       
+    --color-accent: #4F46E5;          
+    --color-accent-light: #818CF8;    
+    --color-dark: #18181B;            
+    --color-text: #1C2024;
+    --color-black: rgb(0, 0, 0);            
+    --color-text-light: rgba(0, 0, 0, 0.5); 
+    --color-white: #FFFFFF;                 
+    --color-gray: #71717A;            
+    --color-gray-dark: #3F3F46;       
+    
+    /* Размеры шрифтов */
+    --text-xs: 12px;   
+    --text-sm: 13px;   
+    --text-base: 14px; 
+    --text-lg: 16px;   
+    --text-xl: 18px;   
+    --text-2xl: 20px;
+    --text-3xl: 24px; 
+    
+    /* Высота строк */
+    --leading-tight: 16px;  
+    --leading-normal: 20px; 
+    --leading-relaxed: 24px; 
+    --leading-xl: 28px;
+    --leading-2xl: 32px;  
+    --leading-3xl: 36px;  
+    
+    /* Отступы */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    
+    /* Радиусы */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    
+    /* Эффекты */
+    --transition: all 0.25s ease;
+    --transition-slow: 0.4s ease;
 }
 
 header {
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -14,46 +55,16 @@ header {
 }
 
 body {
-    background-color: #FAFAFA;
-}
-
-.heading1 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 36px;
-    vertical-align: middle;
-    padding-left: 3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    grid-column: 1;
-    justify-self: start;
-}
-
-.list {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 20px;
-    padding-right: 3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    grid-column: 2;
-    justify-self: end;
-}
-
-.list a {
-    text-decoration: none;
-    color: black;
+    background-color: #fafafa;
 }
 
 .wrapper {
     width: auto;
     max-width: 1200;
     height: auto;
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     margin: 0 2.5rem;
+    margin-bottom: 7rem;
 }
 
 .flex-container {
@@ -63,22 +74,22 @@ body {
 }
 
 .flex-cart {
-    font-size: 20px;
+    font-size: var(--text-2xl);
     font-weight: 700;
-    line-height: 28px;
+    line-height: var(--leading-xl);
     letter-spacing: 0%;
     vertical-align: middle;
-    padding: 1rem 1rem;
+    padding: var(--spacing-sm);
 }
 
 .flex-item {
-    font-size: 16px;
+    font-size: var(--text-lg);
     font-weight: 400;
-    line-height: 24px;
+    line-height: var(--leading-relaxed);
     letter-spacing: 0%;
     vertical-align: middle;
-    color: #71717A;
-    padding: 1rem 1rem;
+    color: var(--color-gray);
+    padding: var(--spacing-sm);
 }
 
 .grid-container {
@@ -105,11 +116,9 @@ body {
 /* стили для карточки*/
 
 .grid-card {
-    width: auto;
-    height: auto;
-    border-radius: 8px;
-    background-color: #FFFFFF;
-    margin: 1rem 1rem;
+    border-radius: var(--radius-md);
+    background-color: var(--color-white);
+    margin: var(--spacing-sm);
     display: flex;
     justify-content: space-between;
 }
@@ -121,7 +130,7 @@ body {
 }
 
 .grid-card-img-item {
-    padding: 1rem 1rem;
+    padding: var(--spacing-sm);
 }
 
 .grid-card-left-sidess {
@@ -135,40 +144,30 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 2rem 2rem;
+    padding: var(--spacing-lg);
 }
 
 .grid-card-title {
-    font-size: 16px;
+    font-size: var(--text-lg);
     font-weight: 400;
-    line-height: 16px;
+    line-height: var(--leading-tight);
     letter-spacing: 0%;
     vertical-align: middle;
 }
 
 .grid-card-author {
-    font-size: 13px;
+    font-size: var(--text-sm);
     font-weight: 400;
-    line-height: 19.5px;
+    line-height: var(--leading-normal);
     letter-spacing: 0%;
     vertical-align: middle;
-    color: #71717A;
-}
-
-.grid-star {
-    width: 1em;
-    height: 1em;
-}
-
-.no-grid-star {
-    width: 1em;
-    height: 1em;
+    color: var(--color-gray);
 }
 
 .grid-card-price {
-    font-size: 16px;
+    font-size: var(--text-lg);
     font-weight: 700;
-    line-height: 24px;
+    line-height: var(--leading-relaxed);
     letter-spacing: 0%;
     vertical-align: middle;
 }
@@ -176,191 +175,109 @@ body {
 /*стили для заказа*/
 
 .grid-order-container {
-    width: auto;
-    height: auto;
-    border-radius: 8px;
-    background-color: #FFFFFF;
-    margin-top: 1rem;
-    margin-right: 1rem;
+    border-radius: var(--radius-md);
+    background-color: var(--color-white);
+    margin-top: var(--spacing-sm);
+    margin-right: var(--spacing-sm);
 }
 
 .order {
-    padding: 1rem 1rem;
+    padding: var(--spacing-sm);
 }
 
 .sub {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: var(--spacing-xs) 0;
 }
 
 .shi {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 0.5rem;
+    padding-bottom: var(--spacing-xs);
 }
 
 .separator {
     width: 100%;
-    border: 1px solid;
-    border-color: #1C2024;
+    border: 1px solid var(--color-text);
 }
 
 .tot {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: var(--spacing-sm);
+    padding-bottom: var(--spacing-sm);
 }
 
 .btn {
     width: 100%;
     height: 2rem;
-    background-color: #18181B;
-    border-radius: 8px; 
-    color: #FFFFFF;
+    background-color: var(--color-dark);
+    border-radius: var(--radius-md); 
+    color: var(--color-white);
     text-align: center;
-    font-size: 14px;
+    font-size: var(--text-base);
     font-weight: 600;
-    line-height: 20px;
+    line-height: var(--leading-normal);
     letter-spacing: 0%;
     vertical-align: middle;
 }
 
 .grid-heading1 {
-    font-size: 18px;
+    font-size: var(--text-xl);
     font-weight: 700;
-    line-height: 28px;
+    line-height: var(--leading-xl);
     letter-spacing: 0%;
     vertical-align: middle;
-    padding-top: 1rem;
+    padding-top: var(--spacing-sm);
 }
 
 .order-text {
-    font-size: 16px;
+    font-size: var(--text-lg);
     font-weight: 400;
-    line-height: 24px;
+    line-height: var(--leading-relaxed);
     letter-spacing: 0%;
     vertical-align: middle;
-    color: #3F3F46;
+    color: var(--color-gray-dark);
 }
 
 .order-price {
-    font-size: 16px;
+    font-size: var(--text-lg);
     font-weight: 600;
-    line-height: 24px;
+    line-height: var(--leading-relaxed);
     letter-spacing: 0%;
     vertical-align: middle;
 }
 
 .order-text-spend {
-    font-size: 14px;
+    font-size: var(--text-base);
     font-weight: 400;
-    line-height: 20px;
+    line-height: var(--leading-normal);
     letter-spacing: 0%;
     vertical-align: middle;
-    color: #71717A;
-    padding-bottom: 1rem;
+    color: var(--color-gray);
+    padding-bottom: var(--spacing-sm);
 }
 
 .free-shipping {
-    font-size: 14px;
+    font-size: var(--text-base);
     font-weight: 700;
-    line-height: 20px;
+    line-height: var(--leading-normal);
     letter-spacing: 0%;
     vertical-align: middle;
-    color: #71717A;
+    color: var(--color-gray);
 }
 
-.total {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 0%;
-    vertical-align: middle;
-}
-
+.total,
 .total-price {
-    font-size: 18px;
+    font-size: var(--text-xl);
     font-weight: 700;
-    line-height: 28px;
+    line-height: var(--leading-xl);
     letter-spacing: 0%;
     vertical-align: middle;
-}
-
-/*Стили для подвала сайта*/
-
-.footer {
-    background-color: black;
-    padding: 1.5rem 0;
-    margin-top: 7rem;
-}
-
-.container {
-    max-width: 1200px;
-    background-color: black;
-    margin: 0 5rem;
-}
-
-ul {
-    list-style: none;
-    padding-top: 1rem;
-}
-
-li {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22.4px;
-    vertical-align: middle;
-    color: #FFFFFF;
-}
-
-a {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer-col {
-    width: 27%; 
-    padding: 0 2rem;
-}
-
-.header4 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 36px;
-    vertical-align: middle;
-    color: #FFFFFF;
-}
-
-.payment {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
-
-.visa {
-    width: 4rem;
-    height: 1.5rem;
-}
-
-.MasterCard {
-    width: 2.5rem;
-    height: 1.5rem;
-}
-
-.AmericanExpress {
-    width: 1.5rem;
-    height: 1.5rem;
 }
 
 

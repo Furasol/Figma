@@ -1,0 +1,167 @@
+:root {
+    /* Цвета */
+    --color-primary: #E9D5FF;         
+    --color-secondary: #EEF2FF;       
+    --color-accent: #4F46E5;          
+    --color-accent-light: #818CF8;    
+    --color-dark: #18181B;            
+    --color-text: #1C2024;  
+    --color-black: rgb(0, 0, 0);          
+    --color-text-light: rgba(0, 0, 0, 0.5); 
+    --color-white: #FFFFFF;                 
+    --color-gray: #71717A;            
+    --color-gray-dark: #3F3F46;       
+    
+    /* Размеры шрифтов */
+    --text-xs: 12px;   
+    --text-sm: 13px;   
+    --text-base: 14px; 
+    --text-lg: 16px;   
+    --text-xl: 18px;   
+    --text-2xl: 20px;
+    --text-3xl: 24px;  
+    
+    /* Высота строк */
+    --leading-tight: 16px;  
+    --leading-normal: 20px; 
+    --leading-relaxed: 24px; 
+    --leading-xl: 28px; 
+    --leading-2xl: 32px;  
+    --leading-3xl: 36px; 
+    
+    /* Отступы */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    
+    /* Радиусы */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    
+    /* Эффекты */
+    --transition: all 0.25s ease;
+    --transition-slow: 0.4s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Шапка*/
+
+.heading1 {
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    line-height: var(--leading-3xl);
+    vertical-align: middle;
+    padding-left: var(--spacing-xl);
+    padding-top: var(--spacing-sm);
+    padding-bottom: var(--spacing-sm);
+    grid-column: 1;
+    justify-self: start;
+}
+
+.list {
+    font-size: var(--text-xs);
+    font-weight: 400;
+    line-height: var(--leading-normal);
+    padding-right: var(--spacing-xl);
+    padding-top: var(--spacing-sm);
+    padding-bottom: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    grid-column: 2;
+    justify-self: end;
+}
+
+.list a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Шапка*/
+
+.star,
+.no-star {
+    width: 1em;
+    height: 1em;
+}
+
+/*Подвал*/
+
+.footer {
+    background-color: var(--color-black);
+    padding: var(--spacing-md) 0;
+}
+
+.container {
+    max-width: 1200px;
+    background-color: var(--color-black);
+    margin: 0 5rem;
+}
+
+ul {
+    list-style: none;
+    padding-top: var(--spacing-sm);
+}
+
+li {
+    font-size: var(--text-base);
+    font-weight: 400;
+    line-height: var(--leading-relaxed);
+    vertical-align: middle;
+    color: var(--color-white);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 27%; 
+    padding: 0 var(--spacing-lg);
+}
+
+.header4 {
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    line-height: var(--leading-3xl);
+    vertical-align: middle;
+    color: var(--color-white);
+}
+
+.payment {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.visa {
+    width: 4rem;
+    height: 1.5rem;
+}
+
+.MasterCard {
+    width: 2.5rem;
+    height: 1.5rem;
+}
+
+.AmericanExpress {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/*Подвал*/
