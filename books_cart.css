@@ -168,6 +168,16 @@ body {
     vertical-align: middle;
 }
 
+.grid-card-delete {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.grid-card-delete:active {
+    transform: scale(0.9);
+}
+
 /*стили для заказа*/
 
 .grid-order-container {
@@ -220,6 +230,11 @@ body {
     line-height: var(--leading-normal);
     letter-spacing: 0%;
     vertical-align: middle;
+    transition: all 0.2s ease;
+}
+
+.btn:active {
+    transform: scale(0.9);
 }
 
 .grid-heading1 {

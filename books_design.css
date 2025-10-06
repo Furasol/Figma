@@ -229,10 +229,11 @@
     height: 2rem;
     opacity: 90%;
     padding-right: var(--spacing-xs);
+    transition: all 0.2s ease;
 }
 
 .card-to-cart:active {
-    transform: scale(1.1);
+    transform: scale(0.9);
 }
 
 /*Стили для кнопок прокрутки*/
@@ -249,8 +250,9 @@
 
 @media (max-width: 1000px) {
     .cards {
-        flex-wrap: wrap;
+        overflow-x: auto;
         gap: 20px;
+        padding: var(--spacing-sm) var(--spacing-md);
     }
 }
 

@@ -91,6 +91,34 @@ header {
 .list a {
     text-decoration: none;
     color: black;
+    position: relative;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.list a:has(svg)::after {
+    display: none;
+}
+
+.list a:has(svg):hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.list a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 2px;
+    background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light));
+    transition: width 0.4s ease;
+    border-radius: 1px;
+}
+
+.list a:hover::after {
+    width: calc(100% - 4px);
 }
 
 /*Шапка*/
