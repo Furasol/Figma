@@ -24,12 +24,13 @@
             <a href="books_design.html">EXPLORE</a>
             <a href="#">SHOP</a>
             <a href="#">SELL YOUR BOOK </a>
-            <a href="books_cart.html"><svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+            <a href="books_cart.html" class="cart-link"><svg width="23" height="21" viewBox="0 0 23 21" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M0.840088 1.75049C0.840088 1.25183 1.24115 0.850647 1.73967 0.850647H3.44513C4.26975 0.850647 5.00066 1.33056 5.34175 2.05043H20.7471C21.7329 2.05043 22.4526 2.98777 22.1939 3.9401L20.6572 9.65033C20.3386 10.8276 19.2703 11.6487 18.0521 11.6487H7.23837L7.44078 12.7173C7.52324 13.141 7.89432 13.4484 8.32537 13.4484H19.1316C19.6301 13.4484 20.0312 13.8496 20.0312 14.3482C20.0312 14.8469 19.6301 15.2481 19.1316 15.2481H8.32537C7.02847 15.2481 5.91524 14.3258 5.67535 13.0547L3.74124 2.89403C3.71501 2.75156 3.59131 2.65033 3.44513 2.65033H1.73967C1.24115 2.65033 0.840088 2.24915 0.840088 1.75049ZM5.63787 18.2476C5.63787 18.0112 5.6844 17.7772 5.77482 17.5588C5.86524 17.3405 5.99776 17.1421 6.16483 16.975C6.3319 16.8079 6.53024 16.6753 6.74852 16.5849C6.96681 16.4944 7.20076 16.4479 7.43703 16.4479C7.6733 16.4479 7.90726 16.4944 8.12554 16.5849C8.34383 16.6753 8.54217 16.8079 8.70924 16.975C8.8763 17.1421 9.00883 17.3405 9.09925 17.5588C9.18966 17.7772 9.2362 18.0112 9.2362 18.2476C9.2362 18.4839 9.18966 18.7179 9.09925 18.9363C9.00883 19.1546 8.8763 19.353 8.70924 19.5201C8.54217 19.6872 8.34383 19.8198 8.12554 19.9102C7.90726 20.0007 7.6733 20.0472 7.43703 20.0472C7.20076 20.0472 6.96681 20.0007 6.74852 19.9102C6.53024 19.8198 6.3319 19.6872 6.16483 19.5201C5.99776 19.353 5.86524 19.1546 5.77482 18.9363C5.6844 18.7179 5.63787 18.4839 5.63787 18.2476ZM18.232 16.4479C18.7092 16.4479 19.1668 16.6375 19.5042 16.975C19.8416 17.3125 20.0312 17.7703 20.0312 18.2476C20.0312 18.7249 19.8416 19.1826 19.5042 19.5201C19.1668 19.8576 18.7092 20.0472 18.232 20.0472C17.7549 20.0472 17.2972 19.8576 16.9598 19.5201C16.6224 19.1826 16.4329 18.7249 16.4329 18.2476C16.4329 17.7703 16.6224 17.3125 16.9598 16.975C17.2972 16.6375 17.7549 16.4479 18.232 16.4479Z"
                         fill="#1E1B4B" />
                 </svg>
+                <span id="cart-count" class="cart-count">0</span>
             </a>
         </nav>
 
@@ -54,496 +55,768 @@
             <div>
                 <h2 class="heading3">New Releases</h2>
             </div>
-            <div class="cards">
-                <div class="card">
-                    <div class="card-top">
-                        <img src="/images/a9f22682695088d2cd5ee6ba17620b9a47ce227c.jpg" class="card-img" alt="book">
-                        <div class="card-price-box">
-                            <div class="card-price">₹18.25</div>
-                        </div>
-                    </div>
-                    <div class="card-bottom">
-                        <h3 class="card-title">The Lost Expedition</h3>
-
-                        <div class="card-rate">
-                            <a href="#" class="card-author">Tom Hardy •</a>
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="no-star" src="/images/!star.svg" alt=".">
-                        </div>
-                        <div class="card-description-container">
-                            <div class="card-description">An adventurer’s perilous quest in the Amazon jungle.</div>
-                        </div>
-                        <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
-                            Cart</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-top">
-                        <img src="/images/brown_book.png" class="card-img" alt="book">
-                        <div class="card-price-box">
-                            <div class="card-price">₹15.75</div>
-                        </div>
-                    </div>
-                    <div class="card-bottom">
-                        <h3 class="card-title">Taste of Italy</h3>
-
-                        <div class="card-rate">
-                            <a href="#" class="card-author">Gina Rossi •</a>
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="no-star" src="/images/!star.svg" alt=".">
-                        </div>
-                        <div class="card-description-container">
-                            <div class="card-description">Authentic Italian recipes to bring the flavors of Italy home.
+            <div class="carousel-container">
+                <button class="carousel-btn carousel-prev">‹</button>
+                <div class="catalog carousel-track">
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/a9f22682695088d2cd5ee6ba17620b9a47ce227c.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹18.25</div>
                             </div>
                         </div>
-                        <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
-                            Cart</button>
+                        <div class="card-bottom">
+                            <h3 class="card-title">The Lost Expedition</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Tom Hardy •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">An adventurer’s perilous quest in the Amazon jungle.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/brown_book.png" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹15.75</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">Taste of Italy</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Gina Rossi •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">Authentic Italian recipes to bring the flavors of Italy
+                                    home.
+                                </div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/blue_book.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹29.99</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">Learning React</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Alex Johnson •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">A comprehensive guide to mastering React.js and modern web
+                                    development.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/yellow_book.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹12.99</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">The Silent Forest</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">David Kim •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">A chilling suspense story set in a haunted woodland.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/yellow_book.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹10.99</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">Pacani</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Nikita Shkatula •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">Lutie.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/yellow_book.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹2.99</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">Mama</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Kirill Belko •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">I love Tanya.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/yellow_book.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹4.99</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">Papa</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Stanislav Horba •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">I love mamochka.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
                     </div>
                 </div>
-
-                <div class="card">
-                    <div class="card-top">
-                        <img src="/images/blue_book.jpg" class="card-img" alt="book">
-                        <div class="card-price-box">
-                            <div class="card-price">₹29.99</div>
-                        </div>
-                    </div>
-                    <div class="card-bottom">
-                        <h3 class="card-title">Learning React</h3>
-
-                        <div class="card-rate">
-                            <a href="#" class="card-author">Alex Johnson •</a>
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/!star.svg" alt=".">
-                        </div>
-                        <div class="card-description-container">
-                            <div class="card-description">A comprehensive guide to mastering React.js and modern web
-                                development.</div>
-                        </div>
-                        <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
-                            Cart</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-top">
-                        <img src="/images/yellow_book.jpg" class="card-img" alt="book">
-                        <div class="card-price-box">
-                            <div class="card-price">₹12.99</div>
-                        </div>
-                    </div>
-                    <div class="card-bottom">
-                        <h3 class="card-title">The Silent Forest</h3>
-
-                        <div class="card-rate">
-                            <a href="#" class="card-author">David Kim •</a>
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="no-star" src="/images/star.svg" alt=".">
-                            <img class="no-star" src="/images/!star.svg" alt=".">
-                        </div>
-                        <div class="card-description-container">
-                            <div class="card-description">A chilling suspense story set in a haunted woodland.</div>
-                        </div>
-                        <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
-                            Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="scrolls-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
+                <button class="carousel-btn carousel-next">›</button>
             </div>
         </section>
         <section>
             <div>
                 <h2 class="heading3">Top Rated Books</h2>
             </div>
-            <div class="cards">
-                <div class="card">
-                    <div class="card-top">
-                        <img src="/images/a9f22682695088d2cd5ee6ba17620b9a47ce227c.jpg" class="card-img" alt="book">
-                        <div class="card-price-box">
-                            <div class="card-price">₹18.25</div>
-                        </div>
-                    </div>
-                    <div class="card-bottom">
-                        <h3 class="card-title">The Lost Expedition</h3>
-
-                        <div class="card-rate">
-                            <a href="#" class="card-author">Tom Hardy •</a>
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="no-star" src="/images/!star.svg" alt=".">
-                        </div>
-                        <div class="card-description-container">
-                            <div class="card-description">An adventurer’s perilous quest in the Amazon jungle.</div>
-                        </div>
-                        <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
-                            Cart</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-top">
-                        <img src="/images/brown_book.png" class="card-img" alt="book">
-                        <div class="card-price-box">
-                            <div class="card-price">₹15.75</div>
-                        </div>
-                    </div>
-                    <div class="card-bottom">
-                        <h3 class="card-title">Taste of Italy</h3>
-
-                        <div class="card-rate">
-                            <a href="#" class="card-author">Gina Rossi •</a>
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="no-star" src="/images/!star.svg" alt=".">
-                        </div>
-                        <div class="card-description-container">
-                            <div class="card-description">Authentic Italian recipes to bring the flavors of Italy home.
+            <div class="carousel-container">
+                <button class="carousel-btn carousel-prev">‹</button>
+                <div class="catalog carousel-track">
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/a9f22682695088d2cd5ee6ba17620b9a47ce227c.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹18.25</div>
                             </div>
                         </div>
-                        <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
-                            Cart</button>
+                        <div class="card-bottom">
+                            <h3 class="card-title">The Lost Expedition</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Tom Hardy •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">An adventurer’s perilous quest in the Amazon jungle.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/brown_book.png" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹15.75</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">Taste of Italy</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Gina Rossi •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">Authentic Italian recipes to bring the flavors of Italy
+                                    home.
+                                </div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/blue_book.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹29.99</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">Learning React</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Alex Johnson •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">A comprehensive guide to mastering React.js and modern web
+                                    development.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/yellow_book.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹12.99</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">The Silent Forest</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">David Kim •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">A chilling suspense story set in a haunted woodland.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/yellow_book.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹10.99</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">Pacani</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Nikita Shkatula •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">Lutie.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/yellow_book.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹2.99</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">Mama</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Kirill Belko •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">I love Tanya.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/yellow_book.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹4.99</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">Papa</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Stanislav Horba •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">I love mamochka.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
                     </div>
                 </div>
-
-                <div class="card">
-                    <div class="card-top">
-                        <img src="/images/blue_book.jpg" class="card-img" alt="book">
-                        <div class="card-price-box">
-                            <div class="card-price">₹29.99</div>
-                        </div>
-                    </div>
-                    <div class="card-bottom">
-                        <h3 class="card-title">Learning React</h3>
-
-                        <div class="card-rate">
-                            <a href="#" class="card-author">Alex Johnson •</a>
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/!star.svg" alt=".">
-                        </div>
-                        <div class="card-description-container">
-                            <div class="card-description">A comprehensive guide to mastering React.js and modern web
-                                development.</div>
-                        </div>
-                        <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
-                            Cart</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-top">
-                        <img src="/images/yellow_book.jpg" class="card-img" alt="book">
-                        <div class="card-price-box">
-                            <div class="card-price">₹12.99</div>
-                        </div>
-                    </div>
-                    <div class="card-bottom">
-                        <h3 class="card-title">The Silent Forest</h3>
-
-                        <div class="card-rate">
-                            <a href="#" class="card-author">David Kim •</a>
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="no-star" src="/images/star.svg" alt=".">
-                            <img class="no-star" src="/images/!star.svg" alt=".">
-                        </div>
-                        <div class="card-description-container">
-                            <div class="card-description">A chilling suspense story set in a haunted woodland.</div>
-                        </div>
-                        <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
-                            Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="scrolls-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
+                <button class="carousel-btn carousel-next">›</button>
             </div>
         </section>
         <section>
             <div>
                 <h2 class="heading3">Our Suggetion</h2>
             </div>
-            <div class="cards">
-                <div class="card">
-                    <div class="card-top">
-                        <img src="/images/a9f22682695088d2cd5ee6ba17620b9a47ce227c.jpg" class="card-img" alt="book">
-                        <div class="card-price-box">
-                            <div class="card-price">₹18.25</div>
-                        </div>
-                    </div>
-                    <div class="card-bottom">
-                        <h3 class="card-title">The Lost Expedition</h3>
-
-                        <div class="card-rate">
-                            <a href="#" class="card-author">Tom Hardy •</a>
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="no-star" src="/images/!star.svg" alt=".">
-                        </div>
-                        <div class="card-description-container">
-                            <div class="card-description">An adventurer’s perilous quest in the Amazon jungle.</div>
-                        </div>
-                        <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
-                            Cart</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-top">
-                        <img src="/images/brown_book.png" class="card-img" alt="book">
-                        <div class="card-price-box">
-                            <div class="card-price">₹15.75</div>
-                        </div>
-                    </div>
-                    <div class="card-bottom">
-                        <h3 class="card-title">Taste of Italy</h3>
-
-                        <div class="card-rate">
-                            <a href="#" class="card-author">Gina Rossi •</a>
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="no-star" src="/images/!star.svg" alt=".">
-                        </div>
-                        <div class="card-description-container">
-                            <div class="card-description">Authentic Italian recipes to bring the flavors of Italy home.
+            <div class="carousel-container">
+                <button class="carousel-btn carousel-prev">‹</button>
+                <div class="catalog carousel-track">
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/a9f22682695088d2cd5ee6ba17620b9a47ce227c.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹18.25</div>
                             </div>
                         </div>
-                        <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
-                            Cart</button>
+                        <div class="card-bottom">
+                            <h3 class="card-title">The Lost Expedition</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Tom Hardy •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">An adventurer’s perilous quest in the Amazon jungle.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/brown_book.png" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹15.75</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">Taste of Italy</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Gina Rossi •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">Authentic Italian recipes to bring the flavors of Italy
+                                    home.
+                                </div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/blue_book.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹29.99</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">Learning React</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Alex Johnson •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">A comprehensive guide to mastering React.js and modern web
+                                    development.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/yellow_book.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹12.99</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">The Silent Forest</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">David Kim •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">A chilling suspense story set in a haunted woodland.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/yellow_book.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹10.99</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">Pacani</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Nikita Shkatula •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">Lutie.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/yellow_book.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹2.99</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">Mama</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Kirill Belko •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">I love Tanya.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/yellow_book.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹4.99</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">Papa</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Stanislav Horba •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">I love mamochka.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
                     </div>
                 </div>
-
-                <div class="card">
-                    <div class="card-top">
-                        <img src="/images/blue_book.jpg" class="card-img" alt="book">
-                        <div class="card-price-box">
-                            <div class="card-price">₹29.99</div>
-                        </div>
-                    </div>
-                    <div class="card-bottom">
-                        <h3 class="card-title">Learning React</h3>
-
-                        <div class="card-rate">
-                            <a href="#" class="card-author">Alex Johnson •</a>
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/!star.svg" alt=".">
-                        </div>
-                        <div class="card-description-container">
-                            <div class="card-description">A comprehensive guide to mastering React.js and modern web
-                                development.</div>
-                        </div>
-                        <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
-                            Cart</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-top">
-                        <img src="/images/yellow_book.jpg" class="card-img" alt="book">
-                        <div class="card-price-box">
-                            <div class="card-price">₹12.99</div>
-                        </div>
-                    </div>
-                    <div class="card-bottom">
-                        <h3 class="card-title">The Silent Forest</h3>
-
-                        <div class="card-rate">
-                            <a href="#" class="card-author">David Kim •</a>
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="no-star" src="/images/star.svg" alt=".">
-                            <img class="no-star" src="/images/!star.svg" alt=".">
-                        </div>
-                        <div class="card-description-container">
-                            <div class="card-description">A chilling suspense story set in a haunted woodland.</div>
-                        </div>
-                        <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
-                            Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="scrolls-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
+                <button class="carousel-btn carousel-next">›</button>
             </div>
         </section>
         <section>
             <div>
                 <h2 class="heading3">Most Popular Books</h2>
             </div>
-            <div class="cards">
-                <div class="card">
-                    <div class="card-top">
-                        <img src="/images/a9f22682695088d2cd5ee6ba17620b9a47ce227c.jpg" class="card-img" alt="book">
-                        <div class="card-price-box">
-                            <div class="card-price">₹18.25</div>
-                        </div>
-                    </div>
-                    <div class="card-bottom">
-                        <h3 class="card-title">The Lost Expedition</h3>
-
-                        <div class="card-rate">
-                            <a href="#" class="card-author">Tom Hardy •</a>
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="no-star" src="/images/!star.svg" alt=".">
-                        </div>
-                        <div class="card-description-container">
-                            <div class="card-description">An adventurer’s perilous quest in the Amazon jungle.</div>
-                        </div>
-                        <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
-                            Cart</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-top">
-                        <img src="/images/brown_book.png" class="card-img" alt="book">
-                        <div class="card-price-box">
-                            <div class="card-price">₹15.75</div>
-                        </div>
-                    </div>
-                    <div class="card-bottom">
-                        <h3 class="card-title">Taste of Italy</h3>
-
-                        <div class="card-rate">
-                            <a href="#" class="card-author">Gina Rossi •</a>
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="no-star" src="/images/!star.svg" alt=".">
-                        </div>
-                        <div class="card-description-container">
-                            <div class="card-description">Authentic Italian recipes to bring the flavors of Italy home.
+            <div class="carousel-container">
+                <button class="carousel-btn carousel-prev">‹</button>
+                <div class="catalog carousel-track">
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/a9f22682695088d2cd5ee6ba17620b9a47ce227c.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹18.25</div>
                             </div>
                         </div>
-                        <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
-                            Cart</button>
+                        <div class="card-bottom">
+                            <h3 class="card-title">The Lost Expedition</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Tom Hardy •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">An adventurer’s perilous quest in the Amazon jungle.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/brown_book.png" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹15.75</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">Taste of Italy</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Gina Rossi •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">Authentic Italian recipes to bring the flavors of Italy
+                                    home.
+                                </div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/blue_book.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹29.99</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">Learning React</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Alex Johnson •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">A comprehensive guide to mastering React.js and modern web
+                                    development.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/yellow_book.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹12.99</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">The Silent Forest</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">David Kim •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">A chilling suspense story set in a haunted woodland.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/yellow_book.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹10.99</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">Pacani</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Nikita Shkatula •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">Lutie.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/yellow_book.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹2.99</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">Mama</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Kirill Belko •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">I love Tanya.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="/images/yellow_book.jpg" class="card-img" alt="book">
+                            <div class="card-price-box">
+                                <div class="card-price">₹4.99</div>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <h3 class="card-title">Papa</h3>
+
+                            <div class="card-rate">
+                                <a href="#" class="card-author">Stanislav Horba •</a>
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/star.svg" alt=".">
+                                <img class="no-star" src="/images/!star.svg" alt=".">
+                            </div>
+                            <div class="card-description-container">
+                                <div class="card-description">I love mamochka.</div>
+                            </div>
+                            <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
+                                Cart</button>
+                        </div>
                     </div>
                 </div>
-
-                <div class="card">
-                    <div class="card-top">
-                        <img src="/images/blue_book.jpg" class="card-img" alt="book">
-                        <div class="card-price-box">
-                            <div class="card-price">₹29.99</div>
-                        </div>
-                    </div>
-                    <div class="card-bottom">
-                        <h3 class="card-title">Learning React</h3>
-
-                        <div class="card-rate">
-                            <a href="#" class="card-author">Alex Johnson •</a>
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/!star.svg" alt=".">
-                        </div>
-                        <div class="card-description-container">
-                            <div class="card-description">A comprehensive guide to mastering React.js and modern web
-                                development.</div>
-                        </div>
-                        <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
-                            Cart</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-top">
-                        <img src="/images/yellow_book.jpg" class="card-img" alt="book">
-                        <div class="card-price-box">
-                            <div class="card-price">₹12.99</div>
-                        </div>
-                    </div>
-                    <div class="card-bottom">
-                        <h3 class="card-title">The Silent Forest</h3>
-
-                        <div class="card-rate">
-                            <a href="#" class="card-author">David Kim •</a>
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="star" src="/images/star.svg" alt=".">
-                            <img class="no-star" src="/images/star.svg" alt=".">
-                            <img class="no-star" src="/images/!star.svg" alt=".">
-                        </div>
-                        <div class="card-description-container">
-                            <div class="card-description">A chilling suspense story set in a haunted woodland.</div>
-                        </div>
-                        <button class="card-to-cart"><img class="card-cart" src="/images/cart.svg" alt=".">Add To
-                            Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="scrolls-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
-                <img src="/images/Button - Scroll to book 1.svg" alt="scroll" class="scroll-btn">
+                <button class="carousel-btn carousel-next">›</button>
             </div>
         </section>
     </main>
@@ -584,6 +857,10 @@
             </div>
         </div>
     </footer>
+
+    <script src="books_data.js"></script>
+    <script src="books_app.js"></script>
+    <script src="search_form.js"></script>
 </body>
 
 </html>
